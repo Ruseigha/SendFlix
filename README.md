@@ -49,6 +49,7 @@ The system is built for:
 # Features
 
 ## Email Delivery
+
 - Send transactional emails
 - Bulk email sending
 - Scheduled delivery
@@ -56,24 +57,28 @@ The system is built for:
 - Delivery status tracking
 
 ## Template Management
+
 - Template creation and updates
 - Template preview
 - Template activation
 - Dynamic rendering
 
 ## Performance
+
 - Redis caching
 - Background workers
 - Connection pooling
 - Horizontal scalability
 
 ## Provider Support
+
 - SMTP
 - AWS SES
 - SendGrid
 - Provider abstraction layer
 
 ## Architecture
+
 - Domain-Driven Design
 - Clean Architecture
 - Infrastructure independence
@@ -92,13 +97,13 @@ Infrastructure → Domain
 
 ## Layers
 
-| Layer | Responsibility |
-|---|---|
-| Domain | Core business logic |
-| Use Case | Application workflows |
+| Layer          | Responsibility        |
+| -------------- | --------------------- |
+| Domain         | Core business logic   |
+| Use Case       | Application workflows |
 | Infrastructure | External integrations |
-| Delivery | APIs and interfaces |
-| Worker | Background processing |
+| Delivery       | APIs and interfaces   |
+| Worker         | Background processing |
 
 ---
 
@@ -123,15 +128,15 @@ sendflix/
 
 # Tech Stack
 
-| Category | Technology |
-|---|---|
-| Language | Go |
-| Database | PostgreSQL |
-| Cache | Redis |
-| Transport | HTTP / gRPC |
-| Containerization | Docker |
-| Architecture | DDD + Clean Architecture |
-| Email Providers | SMTP / AWS SES / SendGrid |
+| Category         | Technology                |
+| ---------------- | ------------------------- |
+| Language         | Go                        |
+| Database         | PostgreSQL                |
+| Cache            | Redis                     |
+| Transport        | HTTP / gRPC               |
+| Containerization | Docker                    |
+| Architecture     | DDD + Clean Architecture  |
+| Email Providers  | SMTP / AWS SES / SendGrid |
 
 ---
 
