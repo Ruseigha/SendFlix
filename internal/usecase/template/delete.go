@@ -158,7 +158,7 @@ func (uc *DeleteTemplateUseCase) Execute(ctx context.Context, req DeleteTemplate
 // RETURNS:
 // - int: Number of emails using this template
 // - error: If query fails
-func (uc *DeleteTemplateUseCase) checkTemplateUsage(ctx context.Context, templateID string) (int, error) {
+func (uc *DeleteTemplateUseCase) checkTemplateUsage(ctx context.Context, _ string) (int, error) {
 	// Count emails using this template
 	filters := domain.EmailFilters{
 		// Would need TemplateID field in EmailFilters
