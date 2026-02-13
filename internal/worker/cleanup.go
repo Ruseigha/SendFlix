@@ -125,7 +125,7 @@ func (w *CleanupWorker) performCleanup(ctx context.Context) {
 
 // cleanupStatus removes emails with given status older than cutoff
 func (w *CleanupWorker) cleanupStatus(
-	ctx context.Context,
+	_ context.Context,
 	status domain.EmailStatus,
 	cutoff time.Time,
 ) (int, error) {
